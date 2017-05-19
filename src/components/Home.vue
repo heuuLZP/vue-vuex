@@ -1,10 +1,10 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <label for="result">6</label>
+    <label for="result">{{this.result}}</label>
     <div class="count">
-      <add></add>
       <reduce></reduce>
+      <add></add>
     </div>
   </div>
 </template>
@@ -17,6 +17,12 @@ export default {
   components: {
     Add,
     Reduce
+  },
+  // 计算属性
+  computed: {
+    result () {
+      return this.$store.getters.result
+    }
   },
   data () {
     return {
