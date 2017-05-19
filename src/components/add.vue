@@ -1,5 +1,5 @@
 <template>
-  <div class="add">
+  <div class="add" @click="add">
     add
   </div>
 </template>
@@ -9,6 +9,11 @@ export default {
   name: 'add',
   data () {
     return {
+    }
+  },
+  methods: {
+    add: function () {
+      this.$store.dispatch('add')
     }
   }
 }
@@ -40,5 +45,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 </style>

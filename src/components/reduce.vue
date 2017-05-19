@@ -1,5 +1,5 @@
 <template>
-  <div class="reduce">
+  <div class="reduce" @click="reduce">
     reduce
   </div>
 </template>
@@ -9,6 +9,11 @@ export default {
   name: 'reduce',
   data () {
     return {
+    }
+  },
+  methods: {
+    reduce: function () {
+      this.$store.dispatch('reduce')
     }
   }
 }
@@ -40,5 +45,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 </style>
