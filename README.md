@@ -1,30 +1,39 @@
 # vue-vuex
 
-> A Vue.js project
+## 用法
 
-## Build Setup
+克隆仓库到本地
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+```
+git clone https://github.com/heuuLZP/vue-vuex.git
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+进入仓库根目录,安装依赖
+```
+npm install
+```
+
+启动项目
+```
+npm run dev
+```
+
+
+
+## 项目结构
+
+```
+src
+├── App.vue
+├── assets
+│   └── logo.png
+├── components        ## 组件
+│   ├── Home.vue      ## 父组件
+│   ├── add.vue       ## 子组件
+│   └── reduce.vue    ## 子组件
+├── main.js
+├── router            ## 路由
+│   └── index.js
+└── vuex              ## 状态管理
+    └── store.js
+```
