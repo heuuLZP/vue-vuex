@@ -37,3 +37,6 @@ src
 └── vuex              ## 状态管理
     └── store.js
 ```
+## 效果 
+
+![计数器](http://upload-images.jianshu.io/upload_images/1567373-6c30bb76afa9d5f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
